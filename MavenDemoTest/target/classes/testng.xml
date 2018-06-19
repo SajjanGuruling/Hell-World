@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Maven Demo Automation">
+	
+	<!-- 
+		<test name="Maven project execute by package">
+		<packages>
+			<package name="com.qa.tests.*"></package>	
+		</packages>
+		</test>
+		
+	 -->	
+		
+	<test name="Maven Demo">
+	   <classes>
+	   		<class name="com.qa.tests.DemoTest"/> 	  		
+	   </classes>
+	   </test>
+	   
+	   <test name="Maven Demo1">
+	   <classes>
+	   <class name="com.qa.tests.DemoTest1"/>	
+	   </classes>
+	   </test>
+	   
+	   <test name="Maven Demo2">
+	   <classes>
+	   <class name="com.qa.tests.DemoTest2"/>
+	   </classes>
+	   </test>
+	   
+	   <test name="Read and Write Property File Demo">
+	   <parameter name="propFilePath" value="E:\\06062018\\FileSystemData\\gmail.properties"></parameter>
+		<parameter name="propWriteFilePath" value="E:\\06062018\\FileSystemData\\gmailWrite.properties"></parameter>
+	   <classes>
+	   <class name="com.qa.tests.RreadAndWritePropertyFile"/>
+	   </classes>
+	   </test>
+	    
+	    <test name="Verify Elements Color">
+	   <classes>
+	   		<class name="com.qa.tests.CssValuesDemo"/> 	  		
+	   </classes>
+	   </test>
+	  
+	   <test name="Broken Link Validation">
+	   <classes>
+	   		<class name="com.qa.tests.FindBrokenLinks"/> 	  		
+	   </classes>
+	   </test>
+	   
+	   <test name="Take Screen Shot">
+	   <classes>
+	   		<class name="com.qa.tests.ScreenShotDemo"/> 	  		
+	   </classes>
+	   </test>
+	   
+	    <test name="Regeular expression">
+	   <classes>
+	   		<class name="com.qa.tests.RegexDemos"/> 	  		
+	   </classes>
+	   </test>
+	   
+	
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Maven Demo Automation]">
+  <parameter name="fileName" value="ReadFriendsData.xlsx"/>
+  <parameter name="sheetName" value="Friends"/>
+  <parameter name="filePath" value="E:\\06062018\\FileSystemData"/>
+  <test name="Read Friends Data from excel sheet(failed)">
+    <parameter name="fileName" value="ReadFriendsData.xlsx"/>
+    <parameter name="sheetName" value="Friends"/>
+    <parameter name="filePath" value="E:\\06062018\\FileSystemData"/>
+    <classes>
+      <class name="com.qa.tests.ExcelFileReader">
+        <methods>
+          <include name="excelReader" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qa.tests.ExcelFileReader -->
+    </classes>
+  </test> <!-- Read Friends Data from excel sheet(failed) -->
+</suite> <!-- Failed suite [Maven Demo Automation] -->
